@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+.events-container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #200027 80%, #3a0257 100%);
+    color: #f0e6d2;
+    font-family: 'Cinzel', serif;
+    padding-bottom: 60px;
+}
+
+/* HERO SECTION */
+.events-hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../assets/2.jpg"); /* Mets une photo d’ambiance de soirée, ou laisse celle-ci */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(40, 10, 50, 0.68);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.events-title {
+    color: #f0e6d2;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 10px #000;
+}
+.events-subtitle {
+    color: silver;
+    font-size: 21px;
+    margin-top: 18px;
+    text-shadow: 1px 1px 8px #2e002c;
+}
+
+/* CONTENT SECTION */
+.events-content-section {
+    margin: 60px auto;
+    max-width: 700px;
+    background: rgba(40, 10, 50, 0.86);
+    padding: 38px 32px;
+    border-radius: 20px;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.40);
+    text-align: center;
+}
+.events-message h2 {
+    color: silver;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+.events-message p {
+    color: #f0e6d2;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+.events-img-placeholder {
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #2a0039;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 28px #0008;
+}
+.events-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.65;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .events-title { font-size: 32px; }
+    .events-subtitle { font-size: 15px; }
+    .events-content-section { padding: 18px 8px; }
+    .events-img-placeholder {
+        width: 130px;
+        height: 130px;
+    }
+}
